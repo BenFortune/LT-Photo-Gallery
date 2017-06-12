@@ -1,0 +1,39 @@
+
+<!-- BEGIN HEADER -->
+<div class="lt-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div><img class="lt-logo" src="img/lt-logo.png" alt="LT Logo"></div>
+                <div>Tech <br/> Assessment</div>
+            </div>
+        </div>
+        <div class="drop-shadow curved curved-bottom"></div>
+    </div>
+</div>
+<hr>
+<!-- END HEADER -->
+<!-- BEGIN PHOTO GALLERY CONTENT -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Image Gallery</h2>
+            <p>Interactive images representing some rad content</p>
+        </div>
+    </div>
+    <lt-pagination lt-model="$ctrl.photoList" lt-clicked="$ctrl.getPhotos(page)"></lt-pagination>
+    <div class="row lt-photo-gallery">
+        <div class="col-sm-3" data-ng-repeat="photo in $ctrl.photoList">
+            <div class="photo-wrapper">
+                <img class="lt-photo" data-ng-src="{{photo.url}}" alt="Photo-{{photo.id}}"/>
+                <div class="lt-photo-info">
+                    <p>Id: {{photo.id}}</p>
+                    <p class="lt-photo-title">Title: {{photo.title}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PHOTO GALLERY CONTENT -->
+<!-- BEGIN FOOTER -->
+<!-- END FOOTER -->

@@ -1,0 +1,26 @@
+<div class="container lt-pagination">
+    <div class="row">
+        <div class="col-sm-12">
+            <p>left page {{$ctrl.leftPage}}</p>
+            <p>middle page {{$ctrl.middlePage}}</p>
+            <p>right page {{$ctrl.rightPage}}</p>
+            <ul>
+                <li class="previous-page" data-ng-class="{'disabled': $ctrl.atFirstPage}" data-ng-disabled="$ctrl.atFirstPage" data-ng-click="$ctrl.newGroup($ctrl.leftPage)">
+                    <span></span>
+                </li>
+                <li class="page" data-ng-class="{'active': $ctrl.leftPage === $ctrl.currentPage}" data-ng-model="$ctrl.leftPage" data-ng-click="$ctl.goToPage($ctrl.leftPage, false, false)">
+                    <span></span>
+                </li>
+                <li class="page" data-ng-class="{'active': $ctrl.middlePage === $ctrl.currentPage}" data-ng-model="$ctrl.middlePage" data-ng-click="$ctrl.goToPage($ctrl.middlePage, false, false)">
+                    <span></span>
+                </li>
+                <li class="page" data-ng-class="{'active': $ctrl.rightPage === $ctrl.currentPage}" data-ng-model="$ctrl.rightPage" data-ng-click="$ctrl.goToPage($ctrl.rightPage, false, false)">
+                    <span></span>
+                </li>
+                <li class="next-page" data-ng-class="{'disabled': $ctrl.atLastPage}" data-ng-click="$ctrl.newGroup($ctrl.rightPage)">
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
