@@ -12,8 +12,8 @@ A sample photo gallery using the following:
     ** If you just installed Node you can skip installing npm as it now comes bundled with Nodejs
 * Clone repo
 * In the command line cd in to your cloned repo run the following commands:
-    ** `npm i`
-    ** `npm start`
+    `npm i`
+    `npm start`
 
 This will open the photo gallery ui in your default browser
 
