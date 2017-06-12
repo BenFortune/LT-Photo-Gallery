@@ -11,11 +11,15 @@ A sample photo gallery using the following:
 * Install NPM (if you don't already have it installed; run `npm -v` to verify if unsure) https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm
     ** If you just installed Node you can skip installing npm as it now comes bundled with Nodejs
 * Clone repo
-* In the command line cd in to your cloned repo run the following commands:
-    `npm i`
-    `npm start`
+* In the command line, cd to your cloned repo run the following commands:
+    ```sh
+        npm install
+        npm start
+    ```
 
 This will open the photo gallery ui in your default browser
 
 * To run unit test enter the following command:
-    `npm test`
+    ```sh
+        npm test
+    ```
