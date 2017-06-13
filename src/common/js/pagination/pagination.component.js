@@ -5,7 +5,8 @@ const component = {
     template: require('./pagination.template.html'),
     bindings: {
         ltClicked: '&',
-        ltModel: '<'
+        ltModel: '<',
+        ltShow: '<'
     }
 };
 

@@ -1,3 +1,5 @@
+@import '../../scss/_lt-vars';
+
 h1 {
     color: blue;
 }
@@ -15,9 +17,11 @@ h1 {
         margin: 0 4px;
         list-style: none;
         cursor: pointer;
-        transition-duration: 0.25s;
-        transition-property: background;
-        border: solid 2px red;
+        -webkit-transition: background 0.35s ease;
+           -moz-transition: background 0.35s ease;
+             -o-transition: background 0.35s ease;
+                transition: background 0.35s ease;
+        border: solid 2px $lt-red;
         border-radius: 100%;
 
         &.previous-page,
@@ -26,7 +30,7 @@ h1 {
         }
 
         &.active {
-            background: red none;
+            background: $lt-red none;
         }
 
         &.disabled {
@@ -39,37 +43,7 @@ h1 {
         }
 
         &:hover {
-            background: red none;
+            background: $lt-red none;
         }
-
-
-        // span {
-        //     position: absolute;
-        //     top: 100%;
-        //     /* Thumbnail */
-        //     display: inline-block;
-        //     visibility: hidden;
-        //     margin-top: 16px;
-        //     padding: 8px;
-        //     transform: translateX(-50%) translateY(-10px);
-        //     pointer-events: none;
-        //     opacity: 0;
-        //     background: red;
-        //
-        //     &:after {
-        //         position: absolute;
-        //         z-index: 1;
-        //         top: -6px;
-        //         left: 50%;
-        //         width: 0;
-        //         height: 0;
-        //         margin-left: -4px;
-        //         /* Thumbnail Tip */
-        //         content: '';
-        //         border-width: 0 6px 6px 6px;
-        //         border-style: solid;
-        //         border-color: transparent transparent red transparent;
-        //     }
-        // }
     }
 }

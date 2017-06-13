@@ -22,7 +22,7 @@ describe('All of Pagination controller /', () => {
     });
 
     it('should set page groups by counting down ...', () => {
-        const page = 3;
+        const page = 1;
         const countdown = true;
         $ctrl.setPageGroups(page, countdown);
         expect($ctrl.leftPage).toEqual(1);
@@ -67,8 +67,8 @@ describe('All of Pagination controller /', () => {
         const page = 2;
         const updatePageGroups = false;
         const countdown = false;
-        $ctrl.goToPage(page, updatePageGroups, countdown)
+        $ctrl.goToPage(page, updatePageGroups, countdown);
         expect($ctrl.currentPage).toEqual(page);
-        expect($ctrl.ltClicked).toHaveBeenCalledWith({'page': page});
-    })
+        expect($ctrl.ltClicked).toHaveBeenCalledWith({page});
+    });
 });

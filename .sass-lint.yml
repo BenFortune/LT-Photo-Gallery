@@ -11,7 +11,6 @@
 files:
   include: '**/*.s+(a|c)ss'
   ignore:
-    - 'src/**/_dice-icons-*.scss'
 options:
   formatter: stylish
   merge-default-rules: false

@@ -1,28 +1,18 @@
 
 <!-- BEGIN HEADER -->
-<div class="lt-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div><img class="lt-logo" src="img/lt-logo.png" alt="LT Logo"></div>
-                <div>Tech <br/> Assessment</div>
-            </div>
-        </div>
-        <div class="drop-shadow curved curved-bottom"></div>
-    </div>
-</div>
-<hr>
+<lt-header></lt-header>
 <!-- END HEADER -->
+
 <!-- BEGIN PHOTO GALLERY CONTENT -->
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
             <h2>Image Gallery</h2>
-            <p>Interactive images representing some rad content</p>
+            <p class="tip-block">Interactive images that display informative content when hovering</p>
         </div>
     </div>
-    <lt-pagination lt-model="$ctrl.photoList" lt-clicked="$ctrl.getPhotos(page)"></lt-pagination>
-    <div class="row lt-photo-gallery">
+    <lt-pagination lt-model="$ctrl.photoList" lt-clicked="$ctrl.getPhotos(page)" lt-show="$ctrl.noPhotosReturned"></lt-pagination>
+    <div class="row lt-photo-gallery" data-ng-if="!$ctrl.noPhotosReturned">
         <div class="col-sm-3" data-ng-repeat="photo in $ctrl.photoList">
             <div class="photo-wrapper">
                 <img class="lt-photo" data-ng-src="{{photo.url}}" alt="Photo-{{photo.id}}"/>
@@ -33,7 +23,14 @@
             </div>
         </div>
     </div>
+    <div class="row" data-ng-if="$ctrl.noPhotosReturned">
+        <div class="col-sm-12">
+            <div class="alert alert-info">Bummer! There was a problem retrieving the super magnificent photos. Please refresh your browser and try again. Sorry for the inconvenience</div>
+        </div>
+    </div>
 </div>
 <!-- END PHOTO GALLERY CONTENT -->
+
 <!-- BEGIN FOOTER -->
+<lt-footer></lt-footer>
 <!-- END FOOTER -->

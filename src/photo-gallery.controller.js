@@ -10,8 +10,18 @@ export default class PhotoGalleryController {
         this.PhotoGalleryService.getPhotos(page).then(success => {
             //TODO handle no photos returning
             this.photoList = success.data;
+            this.checkForPhotos(success.data);
         }, error => {
             console.log('error', error);
         });
+    }
+
+    checkForPhotos(photoList) {
+        if (photoList.length > 0) {
+            this.photoList = photoList;
+            this.noPhotosReturned = false;
+        } else {
+            this.noPhotosReturned = true;
+        }
     }
 }
