@@ -11,7 +11,7 @@ A sample photo gallery ui using the following:
 * Install NPM (if you don't already have it installed; run `npm -v` to verify if unsure) https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm
     ** If you just installed NodeJs you can skip installing NPM as it now comes bundled with Nodejs
 * Clone repo
-* In the command line, cd to your cloned repo run the following commands:
+* In the command line, cd to your cloned repo and run the following commands:
     ```sh
         npm install http-server -g
         npm install
@@ -25,3 +25,9 @@ This will open the photo gallery ui in your default browser
         npm test
     ```
 This will open a new Chrome window to view and debug the tests Karma has run
+
+* If you make changes you can build the app with the following command:
+
+    ``sh
+        grunt photoGallery
+    ``
