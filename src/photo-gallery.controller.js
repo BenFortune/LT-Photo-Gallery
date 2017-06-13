@@ -16,6 +16,7 @@ export default class PhotoGalleryController {
         });
     }
 
+    // Verify photo array has photos in it since api doesn't fail when none exist
     checkForPhotos(photoList) {
         if (photoList.length > 0) {
             this.photoList = photoList;

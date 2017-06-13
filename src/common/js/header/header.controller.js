@@ -3,7 +3,7 @@ export default class HeaderController {
         // ADD DEPENDENCIES HERE
     }
     $onInit() {
-        // INITIATE METHODS HERE
+        // CALL CONTROLLER METHODS ON INTITIALIZATION HERE
     }
 
     // ADD CONTROLLER METHODS HERE
