@@ -8,7 +8,7 @@ A sample photo gallery ui using the following:
 ## To Install and Run
 
 * Install NodeJs (if you don't already have it installed; run `node -v` to verify if unsure) https://nodejs.org/en/download/
-* Install NPM (if you don't already have it installed; run `npm -v` to verify if unsure) https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm
+* Install NPM (if you don't already have it installed; run `npm -v` to verify if unsure) https://www.npmjs.com/get-npm
     ** If you just installed NodeJs you can skip installing NPM as it now comes bundled with Nodejs
 * Clone repo
 * In the command line, cd to your cloned repo and run the following commands:
