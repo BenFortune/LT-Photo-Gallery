@@ -3,7 +3,7 @@ export default class FooterController {
         // ADD DEPENDENCIES HERE
     }
     $onInit() {
-        // CALL CONTROLLER METHODS ON INTITIALIZATION HERE
+        // CALL CONTROLLER METHODS ON INITIALIZATION HERE
     }
 
     // ADD CONTROLLER METHODS HERE
