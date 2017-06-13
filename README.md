@@ -28,6 +28,6 @@ This will open a new Chrome window to view and debug the tests Karma has run
 
 * If you make changes you can build the app with the following command:
 
-    ``sh
+    ```sh
         grunt photoGallery
-    ``
+    ```
